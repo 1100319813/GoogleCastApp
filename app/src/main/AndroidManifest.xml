@@ -8,6 +8,10 @@
         android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
         android:label="Google Cast App">
 
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.example.googlecastapp.CastOptionsProvider" />  <!-- ✅ Added OptionsProvider -->
+
         <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -17,5 +21,4 @@
         </activity>
 
     </application>
-
 </manifest>
